@@ -1,0 +1,103 @@
+/* .container{
+    background-color: rgb(48, 46, 46);
+height: auto;
+} */
+body{
+    background-image: url("../html/sky.jpg");
+    background-position: center;
+}
+.row{
+    /* height: 300px; */
+    width: 500px;
+    margin: auto;
+    margin-top: 246px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.row1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: antiquewhite; */
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.row1 input{
+    margin-left: 10px;
+    flex: 1;
+    border: none;
+    border-bottom: 2px solid rgb(11, 74, 176);
+    padding: 10px;
+    font-weight: 14px;    
+    outline: none;
+    /* border-radius: 20px; */
+    background-color: transparent;
+}
+.row1 button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 50px;
+    color: rgb(254, 249, 245);    
+    background-color:rgb(241, 98, 21) ;
+    border-radius: 40px;
+}
+.row h1{
+    padding-left: 20px;
+    color: rgb(2, 2, 67);
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+ul li::before{
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    top: 11px;
+    left: 8px;
+    background-color: rgb(245, 240, 240);
+}
+ul li.checked{
+    color: rgb(178, 177, 177);
+    /* background-image: ; */
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    width: 20px;
+    height: 20px;
+    background-image: url("../html/checked.png");
+    background-size: cover;
+    background-position: center;
+}
+
+ul li span{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    top: 5px;
+    right: 25px;
+    color: black;
+    text-align: center;
+    line-height: 35px;
+    background-color: rgb(225, 222, 222);
+
+}
+ul li span:hover{
+    background-color: rgb(176, 170, 170);
+}
